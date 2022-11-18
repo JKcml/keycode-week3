@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./keycode.css">
+</head>
+<body>
+    <div class="frontContainer">
+    <h1 class="frontTitle">Hello, this is keycode generator<br>press any key</h1>
+    </div>
+    <div class="container" id="container-later">
+        <div class="mainkey" id="bigKey"></div>
+    </div>
+
+<section id="value-display">
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>event.code</b></div>
+        <div class="panel-body" id="eventCode"><b>Key Value</b></div>
+        <div class="panel-footer">The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.</div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>event.key</b></div>
+        <div class="panel-body" id="eventKey"><b>Key Value</b></div>
+        <div class="panel-footer">The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.</div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>event.which</b></div>
+        <div class="panel-body" id="eventWhich"><b>Key Value</b></div>
+        <div class="panel-footer">event.which and event.keyCode are (deprecated) in modern browsers. Use .key or .code instead.</div>
+    </div>
+</section>
+<script src="./keycode.js"></script>
+</body>
+</html>
